@@ -1,0 +1,19 @@
+.App {
+	text-align: center;
+	background-color: burlywood;
+}
+.demoButton {
+	width: 100px;
+	height: 100px;
+	border-color: crimson;
+	background-color: darksalmon;
+	font-size: x-large;
+}
+.startButton {
+	width: 100px;
+	height: 100px;
+	border-color: red;
+	background-color: rgb(50, 20, 220);
+	color: aliceblue;
+	border-radius: 50%;
+}
