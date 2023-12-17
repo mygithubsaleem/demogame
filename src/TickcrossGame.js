@@ -45,7 +45,7 @@ function TickcrossGame() {
 
 	return (
 		<>
-			<div>
+			<div style={{ textAlign: "center" }}>
 				<Header />
 
 				<h1>First Player is "X" Second Player is "O"</h1>

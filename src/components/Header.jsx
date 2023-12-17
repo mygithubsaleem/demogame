@@ -2,25 +2,23 @@ import React from "react";
 import headerimage from "../images/logo2.png";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import { Nav } from "react-bootstrap";
-// import loginStyle from "../loginStyles/loginForm.module.css";
+import headerstyle from "../style/gameStyle.module.css";
 
 const Header = () => {
 	return (
 		<>
-			<div>
+			<div className={headerstyle.game_header}>
 				<nav>
 					<ul>
 						<li>
-							<img src={headerimage} width={60} height={60} />
+							<img src={headerimage} width={50} height={50} />
 						</li>
 						<li>
-							<h1>
-								{" "}
-								<span style={{ color: "blue", paddingLeft: 20 }}>
-									SHIFT Solution & Traning Institue
-								</span>
-							</h1>
-						</li>{" "}
+							<div style={{ height: 12 }} />
+							<span style={{ color: "blue", paddingLeft: 20 }}>
+								SHIFT Solution & Traning Institue
+							</span>
+						</li>
 					</ul>
 				</nav>
 			</div>
