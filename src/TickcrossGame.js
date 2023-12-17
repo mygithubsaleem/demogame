@@ -1,5 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
+import Header from "./components/Header";
+import gamestyle from "./style/gameStyle.module.css";
 const winnerArray = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -11,7 +13,7 @@ const winnerArray = [
 	[2, 4, 6],
 ];
 
-function App() {
+function TickcrossGame() {
 	const [turn, setTurn] = useState("X");
 	const [currentPlayer, setCurrentPlayer] = useState([]);
 
@@ -43,10 +45,11 @@ function App() {
 
 	return (
 		<>
-			<div className="App">
-				<h1>Tick Cross Game By SHIFT Solution</h1>
-				<h1>First Player is "X" </h1>
-				<h1>Second Player is "O" </h1>
+			<div>
+				<Header />
+
+				<h1>First Player is "X" Second Player is "O"</h1>
+
 				<div className="gameBoard">
 					<button
 						className="demoButton"
@@ -137,4 +140,4 @@ function App() {
 	);
 }
 
-export default App;
+export default TickcrossGame;
