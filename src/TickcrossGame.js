@@ -1,7 +1,12 @@
 import "./App.css";
 import React, { useState } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import gamestyle from "./style/gameStyle.module.css";
+import { Row, Col } from "react-bootstrap";
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 const winnerArray = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -23,7 +28,6 @@ function TickcrossGame() {
 		player[turnno] = turn;
 
 		setCurrentPlayer(player);
-
 		// console.log("player Turn...X or O.", turn);
 		// console.log("Player Turn value", turnno);
 		// console.log("player array for winner", player);
@@ -51,6 +55,7 @@ function TickcrossGame() {
 				<h1>First Player is "X" Second Player is "O"</h1>
 
 				<div className="gameBoard">
+					<div style={{ height: 20 }} />
 					<button
 						className="demoButton"
 						onClick={() => {
@@ -133,8 +138,10 @@ function TickcrossGame() {
 						reStartGame();
 					}}
 				>
-					New Game{" "}
+					New Game
 				</button>
+				<div style={{ height: 20 }} />
+				{<Footer />}
 			</div>
 		</>
 	);
