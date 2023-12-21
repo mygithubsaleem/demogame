@@ -2,10 +2,6 @@ import "./App.css";
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import gamestyle from "./style/gameStyle.module.css";
-import { Row, Col } from "react-bootstrap";
-
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 const winnerArray = [
 	[0, 1, 2],
@@ -28,9 +24,7 @@ function TickcrossGame() {
 		player[turnno] = turn;
 
 		setCurrentPlayer(player);
-		// console.log("player Turn...X or O.", turn);
-		// console.log("Player Turn value", turnno);
-		// console.log("player array for winner", player);
+
 		winnerArray.find((winMap) => {
 			if (
 				player[winMap[0]] === player[winMap[1]] &&
@@ -62,7 +56,7 @@ function TickcrossGame() {
 							newplayer(0);
 						}}
 					>
-						{currentPlayer[0] || "Player"}
+						{currentPlayer[0] || "."}
 					</button>
 					<button
 						className="demoButton"
@@ -70,7 +64,7 @@ function TickcrossGame() {
 							newplayer(1);
 						}}
 					>
-						{currentPlayer[1] || "Player"}{" "}
+						{currentPlayer[1] || "."}{" "}
 					</button>
 					<button
 						className="demoButton"
@@ -78,7 +72,7 @@ function TickcrossGame() {
 							newplayer(2);
 						}}
 					>
-						{currentPlayer[2] || "Player"}
+						{currentPlayer[2] || "."}
 					</button>
 					<br />
 					<button
@@ -87,7 +81,7 @@ function TickcrossGame() {
 							newplayer(3);
 						}}
 					>
-						{currentPlayer[3] || "Player"}
+						{currentPlayer[3] || "."}
 					</button>
 					<button
 						className="demoButton"
@@ -95,7 +89,7 @@ function TickcrossGame() {
 							newplayer(4);
 						}}
 					>
-						{currentPlayer[4] || "Player"}
+						{currentPlayer[4] || "."}
 					</button>
 					<button
 						className="demoButton"
@@ -103,7 +97,7 @@ function TickcrossGame() {
 							newplayer(5);
 						}}
 					>
-						{currentPlayer[5] || "Player"}
+						{currentPlayer[5] || "."}
 					</button>
 					<br />
 					<button
@@ -112,7 +106,7 @@ function TickcrossGame() {
 							newplayer(6);
 						}}
 					>
-						{currentPlayer[6] || "Player"}
+						{currentPlayer[6] || "."}
 					</button>
 					<button
 						className="demoButton"
@@ -120,7 +114,7 @@ function TickcrossGame() {
 							newplayer(7);
 						}}
 					>
-						{currentPlayer[7] || "Player"}
+						{currentPlayer[7] || "."}
 					</button>
 					<button
 						className="demoButton"
@@ -128,7 +122,7 @@ function TickcrossGame() {
 							newplayer(8);
 						}}
 					>
-						{currentPlayer[8] || "Player"}
+						{currentPlayer[8] || "."}
 					</button>
 				</div>
 				<br />
